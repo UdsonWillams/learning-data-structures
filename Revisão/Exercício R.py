@@ -22,7 +22,6 @@ def main():
 while True:
     num = main()
     palindromo(num)
-    continuar = str(input("\nDESEJA CONTINUAR? [S / N]").upper()[0])
+    continuar = str(input("DESEJA CONTINUAR? [S / N]").upper()[0])
     if continuar == "N":
-        print("\nFINALIZANDO...")
         break
