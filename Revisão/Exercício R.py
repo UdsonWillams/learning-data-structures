@@ -1,26 +1,28 @@
-def pedirNumero():
-    num = int(input("DIGITE UM NUMERO PARA VERIFICAÇÃO: "))
-    return num
-
-
-def main(num):
-    numPali1 = str(num)
-    numPali2 = str(num)
+def palindromo(num):
+    palindromo = str(num)
     cont1 = 0
     cont2 = -1
-    total = int(len(numPali1))
-    while cont1 < len(numPali1):
-        if numPali1[cont1] == numPali2[cont2]:
-            print(numPali1[cont1], end=" ")
+    while cont1 < len(palindromo):
+        if palindromo[cont1] == palindromo[cont2]:
+            print(palindromo[cont1], end=" ")
             cont1 += 1
             cont2 -= 1
-            if cont1 == total:
+            if cont1 == len(palindromo):
                 print("\nESTE NUMERO É UM PALINDROMO")
         else:
             print("\nESTE NUMERO NÃO É UM PALINDROMO")
-            cont1 = total + 1
+            cont1 = len(palindromo) + 1
 
 
-num = pedirNumero()
-main(num)
+def main():
+    numero = int(input("DIGITE UM NUMERO PARA VERIFICAÇÃO: "))
+    return numero
 
+
+while True:
+    num = main()
+    palindromo(num)
+    continuar = str(input("\nDESEJA CONTINUAR? [S / N]").upper()[0])
+    if continuar == "N":
+        print("\nFINALIZANDO...")
+        break
