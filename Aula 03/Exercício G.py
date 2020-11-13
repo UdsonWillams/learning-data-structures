@@ -8,9 +8,12 @@ def delataCorVermelha():
         cor = str(input("Me fale uma cor: "))
         cores.append(cor)
         continuar = str(input("Deseja continuar? [sim / nao ]").lower())
-    if "vermelho" in cores:
-        cores.remove("vermelho")
-        print("A cor vermelha foi removida")
+    for i in range(0, len(cores)):
+        if "vermelho" in cores:
+            cores.remove("vermelho")
+            print("A cor vermelha foi removida")
+        else:
+            print("Voce nao digitou vermelho")
     print(cores)
 
 
