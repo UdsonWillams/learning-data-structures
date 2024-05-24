@@ -3,24 +3,24 @@
 <p>Repositorio para estudo de estruturas de dados.</p>
 <p>WIP</p>
 
-## Pilha
+## Complexidade de Algoritmos.
 
-## Matrizes
+## Big O Notation
 
-## Fila
+## Listas em alocação sequencial
 
-## Árvore Binária de Busca
+## Lista encadeada
 
-## Heap Binária
+## Pilhas
 
-## Tabela Hash
+## Filas
 
-## Dicionários
+## Árvores
 
-## Sets
-
-## Listas, tuplas, conjuntos e dicionários
-
-## Análise assintótica
+## Árvores Binarias
 
 ## Grafos
+
+## Especifico Python
+
+## Tuplas, Conjuntos e Dicionários
