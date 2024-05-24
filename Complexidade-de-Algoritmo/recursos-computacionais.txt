@@ -1,0 +1,15 @@
+01 - os recursos que nos gerenciamos enquanto programamos
+são memoria e cpu do computador.
+
+- memoria a capacidade de armazenar dados do computador
+- cpu esta relacionado a capacidade de processamento, realizar operações com esses dados.
+
+02 - Todo valor deve ser armazenado em algum lugar da memoria do computador
+
+03 - Algumas funções, mesmo de uma linha, podem ser desmembradas como varias
+tarefas para o computador. 
+
+
+Sistema interessante que nos mostra passo a passo com uma imagem 
+do que está ocorrendo na memoria durante a execução do sistema.
+https://pythontutor.com/
