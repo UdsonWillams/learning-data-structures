@@ -1,0 +1,36 @@
+-- COMPLEXIDADE
+É uma medida da quantidade de recursos que são demandados por um algoritmo.
+
+Nós podemos falar de complexidade de tempo ou complexidade de espaço(tempo = cpu e espaço = memoria.)
+
+-- CALCULAR COMPLEXIDADE
+Para calcular complexidade vamos fazer contas pouco detalhadas, ou até mesmo grosseiras
+Por que nosso interesse é entender como a complexidade varia de acordo com a complexidade do algoritmo.
+
+def inverter_lista(lista):
+    tamanho = len(lista)
+    limite = tamanho // 2
+    for i in range(limite):
+        aux = lista[i]
+        lista[i] = lista[n-i]
+        lista[tamanho-i] = aux
+
+-- CALCULO DA COMPLEXIDADE DE MEMORIA DO ALGORITMO(Chamamos de complexidade de espaço)
+# Aqui temos exigidos, 4 + N valores em memoria. Sendo N o tamanho da lista que pode ser variado.
+# tamanho, limite, aux e i sendo os outros valores.
+
+-- CALCULO DA COMPLEXIDADE DA CPU DO ALGORITMO(Chamamos de complexidade de tempo)
+## Pra isso vamos contar as operações elementares 
+## (uma operação de passos constantes, que não esconde os passos do nosso algoritmo.)
+
+# Aqui temos um função com 
+# 2 operações elementares + 3*(n/2)
+    # tamanho = len(lista) - 1° operação elementar
+    # limite = tamanho // 2 - 2° operação elementar
+    # 3*(n/2) é por que serão feitas mais 3 dentro do for
+    # E esse for vai ser o tamanho de lista, que é N, dividido por 2
+    # logo 3 * (n/2).
+
+#  ESSAS EXPRESSÕES DEPENDIAM DO TAMANHO DA LISTA
+#  SE FOSSE ALGO PEQUENO SERIM GASTOS MENOS ESPAÇO E TEMPO,
+#  SENDO GRANDE, SERIA JUSTAMENTE O CONTRARIO.
