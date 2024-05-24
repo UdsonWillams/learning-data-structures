@@ -1,0 +1,15 @@
+Pilha OU STACK
+
+Uma forma de armazenar dados
+Ela permite inserção e remoção de elementos
+
+Funciona parecido com um array. 
+
+Quando se insere um elemento, ele é inserido ao final da pilha.
+
+E ao fazer uma remoção de elementos, ela segue essa logica,
+primeiro é removido o objeto final e seu antecessor, e assim por diante.
+
+Ou seja, o primeiro elemento é o ultimo a ser removido, e o ultimo o primeiro.
+
+Oque chamamos de FILO: First in, Last out.
