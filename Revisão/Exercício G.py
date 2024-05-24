@@ -9,7 +9,7 @@ def dois(num1, num3):
 
 
 def treis(num3):
-    mostre = num3 ** 3
+    mostre = num3**3
     return mostre
 
 
