@@ -1,0 +1,52 @@
+Precisamos que a expressão de complexidade seja
+independente de alguns fatores:
+- A linguaguem de programação
+- E o computador que ela está sendo executada
+
+## Estudar sobre LIMITE na matematica
+Temos de eleger uma expressão dominante na função.
+Precisamos entender qual a expressão que tem dominancia na função, 
+no exemplo 2 + 2*n a expressão dominante é o valor 2*n pois a soma 
+dos 2 valores tem uma variancia muito baixa.
+
+2 + 2 * 4 = seria 10
+na ordem de prescedencia, retornaria 8 + 2 == 10
+Os 2 valem 25% do 8 ou 20% do 10.
+
+Mas em outro exemplo
+2 + 2 * 100 = seria 202
+na ordem de prescedencia, retornaria 200 + 2 == 202
+Os 2 valem agora 2% do 20 ou menos ainda do total 202
+
+Logo a nossa expressão dominante é o valor 2*n
+
+Essa expressão: 2 + 2*n foi avalida como O(n)
+Ou de complexidade linear O(n)
+
+Já outro exemplo de função
+(n² - n) / 2 + 1 
+Essa função se tornou O(n²)
+Ou de complexidade quadratica.
+Por que o valor n² é a expressão dominante na nossa função.
+> Mesma situação acima, N sendo 10 ao quadrado, a função é algo simples
+porem N sendo 2000 ao quadrado já se torna algo bem mais complexo.
+-------------
+
+1 - a complexidade do algoritmo é uma medida da quantidade de recursos demandados 
+por esse algoritmo para sua execução e independente de alguns fatores:
+- A linguaguem de programação
+- E o computador que ela está sendo executada
+
+2 - Oque mais importa acerca da complexidade do algoritmo é como que ela cresce
+com o tamanho da entrada. como é o comportamento da complexidade do algoritmo
+com o N, como ocorre essa variação de comportamento.
+
+3 - Nos expressamos a complexidade do algoritmo utilizando a notação do
+O grande(big O). e essa anotação é muito util, pois ela nos permite focar
+apenas no termo dominante da função e rapidamente entender qual é o comportamento
+daquele algoritmo.
+
+4 - Quando tivermos algoritmos que podem encerrar de maneiras diferentes.
+fazendo um numero diferente de operações, nós iremos calcular a complexidade
+do pior caso, o caso que vai executar o maior numero de operações. Para termos 
+um limite, e sabermos que daquele valor o algoritmo não vai passar.
